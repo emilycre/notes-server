@@ -2,7 +2,14 @@
   "name": "notes-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "jest" : {
+    "testEnvironment": "node"
+  },
   "scripts": {
     "test": "jest --runInBand --verbose",
     "test:watch": "npm run test -- --watch",
